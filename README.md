@@ -1,0 +1,1 @@
+# FireCodeIO is a coding practice wesite that uses machine learning to generate unique training paths.  These are my attempts at solving the problems and reworking them as my experience gets better.  I will solve problems in Java, C, Python, and sometimes shell languages.
