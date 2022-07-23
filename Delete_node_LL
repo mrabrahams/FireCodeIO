@@ -1,0 +1,31 @@
+/**
+   * Deletes the node at the nth index of the input linked
+   * list. If n is out of bounds, returns the list without
+   * modification.
+   *
+   * @param head Head of the singly linked list.
+   * @param n    Index (zero-indexed) of the node to be deleted.
+   * @return Head ListNode of the modified linked list.
+   */
+    public ListNode deleteNth(ListNode head, int n) {
+        if (head == null) {
+        return null; 
+        }
+        if (n == 0) {
+        return head.next; 
+        }
+        ListNode prev = head; 
+        ListNode curr = head.next;
+        int count = 1;
+        while (curr != null) {
+        if (count == n) {
+            prev.next = curr.next;
+            curr.next = null;
+            return head;
+        }
+        prev = curr;
+        curr = curr.next;
+        count++;
+        }
+        return head;
+    }
